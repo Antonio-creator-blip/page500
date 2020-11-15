@@ -29,7 +29,7 @@ h1, h2{
 #typing{
     position: relative;
     display: none;
-    animation: type 7s steps(28);
+    animation: type 7s steps(33);
     overflow: hidden;
     white-space: nowrap;
     background-color: #040204;
@@ -42,7 +42,7 @@ h1, h2{
         width: 0ch;
     }
     100%{
-        width: 28ch;
+        width: 33ch;
     }
 }
 
