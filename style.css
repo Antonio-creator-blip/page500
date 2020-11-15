@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+body{
+    margin: 0;
+    background: url(tenor.gif);
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h1, h2{
+    color: #fcfefc;
+    margin: 0;
+}
+#error > h1,h2{
+    font-family: 'VT323', monospace;
+}
+#error{
+    background-color: #040204;
+    position: relative;
+    top: 62vh;
+}
+#typing{
+    position: relative;
+    display: none;
+    animation: type 7s steps(22);
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #040204;
+    border-right: 4px solid white;
+    font-family: 'Nova Mono', monospace;
+}
+
+@keyframes type{
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 22ch;
+    }
+}
+
+
+@media (min-width: 576px){
+    h1{
+        font-size: 2.5em;
+    }
+    h2{
+        font-size: 1.5em;
+        margin-bottom: 1vh;
+    }
+    #error{
+        top: 20vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 767px){
+    #error{
+        top: 65vh;
+    }
+    
+    #typing{
+        top: 75vh;
+        display: block;
+    }
+    h1{
+        font-size: 4em;
+    }
+    h2{
+        font-size: 2.5em;
+    }
+    
+}
+@media (min-width: 1200px){
+    
+    #error{
+        top: 20vh;
+    }
+    #typing{
+        top: 30vh;
+    }
+    h1{
+        font-size: 6em;
+    }
+    h2{
+        font-size: 4.5em;
+    }
+    
+}
